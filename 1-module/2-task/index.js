@@ -12,6 +12,9 @@ function isValid(name) {
 
   //2) через тернарный оператор. Возможно, визуально менее понятно:
   return (name === null || (name.trim()).length < 4 || name.indexOf(' ') !== -1) ? false : true
+
+  //3)
+  //return !!name && !name.includes(' ') && name.length >= 4;
 }
 
 function sayHello() {
